@@ -7,7 +7,7 @@ public class KremlinBot implements Bot {
 
     @Override
     public String answer(String message) throws BadAnswerException {
-        if (message.contains("CША")) {
+        if (message.contains("США")) {
             throw new BadAnswerException("(ваш компьютер взломан русскими хакерами)");
         } else if (message.contains("Путин")) {
             return (new Answer<>(new Emoji(2))).get().getTextInterpetation();
